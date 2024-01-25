@@ -11,7 +11,7 @@
 ../../src/tb/axi_master_top.sv
 ../../src/tb/axi_if/axi_master_interface.sv
 ../../src/tb/env/axi_env_pkg.sv
-../../src/tb/env/axi_master_enviroment.sv
+../../src/tb/env/axi_master_environment.sv
 ../../src/tb/env/axi_master_scoreboard.sv
 ../../src/tb/master/axi_master_pkg.sv
 ../../src/tb/master/axi_master_agent.sv
