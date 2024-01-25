@@ -3,4 +3,5 @@ package axi_env_pkg;
 import uvm_pkg::*;
 `include "axi_master_scoreboard.sv"
 `include "../master/axi_master_agent.sv"
+  `include "../master/axi_master_transaction.sv"
 endpackage
