@@ -7,6 +7,7 @@
 //`include "axi_master_scoreboard.sv"
 //`include "axi_master_coverage.sv"
 import uvm_pkg::*;
+`include "uvm_macros.svh"
 class axi_master_environment extends uvm_env;
  `uvm_component_utils(axi_master_environment)
 
