@@ -1,10 +1,10 @@
 `ifndef AXI_MASTER_ENVIRONMENT_INCLUDED_
 `define AXI_MASTER_ENVIRONMENT_INCLUDED_
 
+import axi_env_pkg::*;
 
-
-`include "../master/axi_master_agent.sv"
-`include "axi_master_scoreboard.sv"
+//`include "../master/axi_master_agent.sv"
+//`include "axi_master_scoreboard.sv"
 //`include "axi_master_coverage.sv"
 import uvm_pkg::*;
 `include "uvm_macros.svh"
