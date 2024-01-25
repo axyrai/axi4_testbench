@@ -10,13 +10,16 @@
 ../../src/globals/axi4_globals_pkg.sv
 ../../src/tb/axi_master_top.sv
 ../../src/tb/axi_if/axi_master_interface.sv
+../../src/tb/env/axi_env_pkg.sv
 ../../src/tb/env/axi_master_enviroment.sv
 ../../src/tb/env/axi_master_scoreboard.sv
+../../src/tb/master/axi_master_pkg.sv
 ../../src/tb/master/axi_master_agent.sv
 ../../src/tb/master/axi_master_driver.sv
 ../../src/tb/master/axi_master_monitor.sv
 ../../src/tb/master/axi_master_sequencer.sv
 ../../src/tb/master/axi_master_transaction.sv
+../../src/tb/test/axi_test_pkg.sv
 ../../src/tb/test/axi_base_test.sv
 ../../src/tb/test/axi_master_random_test.sv
 ../../src/tb/test/axi_master_read_8b_test.sv
@@ -25,6 +28,7 @@
 ../../src/tb/test/axi_master_write_16b_test.sv 
 ../../src/tb/test/axi_master_write_8b_test.sv
 ../../src/tb/test/axi_master_write_32b_test.sv
+../../src/tb/test/sequences/axi_sequence_pkg.sv
 ../../src/tb/test/sequences/axi_master_base_sequence.sv
 ../../src/tb/test/sequences/axi_master_random_sequence.sv
 ../../src/tb/test/sequences/axi_master_read_8b_transfer.sv 
@@ -33,5 +37,6 @@
 ../../src/tb/test/sequences/axi_master_write_8b_transfer.sv 
 ../../src/tb/test/sequences/axi_master_write_16b_transfer.sv
 ../../src/tb/test/sequences/axi_master_write_32b_transfer.sv
+
 
 
