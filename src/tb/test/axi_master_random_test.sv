@@ -16,7 +16,7 @@ endfunction : new
  task run_phase(uvm_phase phase);
   
   super.run_phase(phase);
-   axi_master_random_seq_h = axi_master_random_seq::type_id::create("axi_master_random_seq_h");
+   axi_master_random_seq_h = axi_master_random_sequence::type_id::create("axi_master_random_seq_h");
    `uvm_info(get_type_name(),$sformatf("axi_master_random_test"),UVM_LOW);
   phase.raise_objection(this);
    axi_master_random_seq_h .start(axi_env_h.axi_master_agent_h.axi_master_seqr_h);
