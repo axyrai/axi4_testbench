@@ -28,7 +28,7 @@ endfunction : new
 //--------------------------------------------------------------------------------------------
 task axi_master_read_16b_transfer::body();
   super.body();
-  
+  req=axi_master_transaction::type_id::create("req");
   start_item(req);
   if(!req.randomize() with {req.s_axi_arsize == READ_2_BYTES;
                             req.s_axi_arvalid == 1;
