@@ -4,4 +4,4 @@ cd sim/questa_sim
 
 make compile to compile
 
-make simulate to simulate
+make simulate test=test_name uvm_verbosity=uvm_verbosity to simulate
