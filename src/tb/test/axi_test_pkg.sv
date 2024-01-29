@@ -1,6 +1,6 @@
 `ifndef AXI_TEST_PKG_INCLUDED_
 `define AXI4_TEST_PKG_INCLUDED_
-package axi_master_pkg;
+package axi_test_pkg;
  `include "uvm_macros.svh"
  import uvm_pkg::*;
  import axi4_globals_pkg::*;
