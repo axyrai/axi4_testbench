@@ -30,7 +30,7 @@ endfunction : new
 task axi_master_write_8b_transfer::body();
   super.body();
   `uvm_info(get_type_name(), $sformatf("DEBUG_MSHA :: BEFORE axi_master_write_8b_transfer"), UVM_NONE); 
-
+  req=axi_master_transaction::type_id::create("req");
   start_item(req);
   if(!req.randomize() with {req.s_axi_awsize == WRITE_1_BYTE;
                             req.s_axi_arvalid == 0;
