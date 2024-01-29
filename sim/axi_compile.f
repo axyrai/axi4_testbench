@@ -17,8 +17,9 @@
 ../../src/tb/master/axi_master_monitor.sv
 ../../src/tb/master/axi_master_sequencer.sv
 ../../src/tb/master/axi_master_transaction.sv
-../../src/tb/test/axi_test_pkg.sv
+
 ../../src/tb/env/axi_env_pkg.sv
+../../src/tb/test/axi_test_pkg.sv
 ../../src/tb/axi_master_top.sv
 
 
