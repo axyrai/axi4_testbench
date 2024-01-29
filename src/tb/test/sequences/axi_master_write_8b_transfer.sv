@@ -35,7 +35,7 @@ task axi_master_write_8b_transfer::body();
   if(!req.randomize() with {req.s_axi_awsize == WRITE_1_BYTE;
                             req.s_axi_arvalid == 0;
                             req.s_axi_awvalid == 1;
-                            req.awburst == WRITE_INCR;}) begin
+                            req.s_axi_awburst == WRITE_INCR;}) begin
     `uvm_fatal("axi4","Rand failed");
   end 
   finish_item(req);
