@@ -10,7 +10,7 @@
 
 ../../src/globals/axi4_globals_pkg.sv
 ../../src/tb/master/axi_master_pkg.sv
-../../src/tb/test/sequences/axi_sequence.sv
+../../src/tb/test/sequences/axi_sequence_pkg.sv
 ../../src/tb/env/axi_env_pkg.sv
 ../../src/tb/test/axi_test_pkg.sv
 
