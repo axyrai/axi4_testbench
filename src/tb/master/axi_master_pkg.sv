@@ -7,8 +7,9 @@ package axi_master_pkg;
   `include "axi_master_transaction.sv"
   `include "axi_master_driver.sv"
   `include "axi_master_monitor.sv"
+  `include "axi_master_sequencer.sv"
   `include "axi_master_agent.sv"
 
-  `include "axi_master_sequencer.sv"
+
   
 endpackage
