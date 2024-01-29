@@ -30,7 +30,7 @@ endfunction : new
 task axi_master_random_sequence::body();
   super.body();
   `uvm_info(get_type_name(),$sformatf("axi_master_random_sequence"),UVM_LOW);
-  req=axi_master_sequence_item::type_id::create("req");
+  req=axi_master_transaction::type_id::create("req");
   start_item(req);
   req.randomize();
   req.print();
