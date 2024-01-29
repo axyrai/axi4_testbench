@@ -1,4 +1,3 @@
-
 `ifndef AXI_MASTER_PKG_INCLUDED_
 `define AXI_MASTER_PKG_INCLUDED_
 package axi_master_pkg;
