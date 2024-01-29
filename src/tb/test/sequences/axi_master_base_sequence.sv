@@ -1,5 +1,5 @@
-`ifndef AXI_MASTER_BASE_SEQ_INCLUDED_
-`define AXI_MASTER_BASE_SEQ_INCLUDED_
+`ifndef AXI_MASTER_BASE_SEQUENCE_INCLUDED_
+`define AXI_MASTER_BASE_SEQUENCE_INCLUDED_
 //--------------------------------------------------------------------------------------------
 // Class : axi_master_base_sequence
 // Creating master_base_seq extends from uvm_sequence
