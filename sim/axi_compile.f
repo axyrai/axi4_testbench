@@ -8,7 +8,6 @@
 +incdir+../../src/hvl_top/test
 ../../src/dut/axi_ram.v
 ../../src/globals/axi4_globals_pkg.sv
-../../src/tb/axi_master_top.sv
 ../../src/tb/axi_if/axi_master_interface.sv
 ../../src/tb/env/axi_env_pkg.sv
 ../../src/tb/env/axi_master_environment.sv
@@ -37,6 +36,6 @@
 ../../src/tb/test/sequences/axi_master_write_8b_transfer.sv 
 ../../src/tb/test/sequences/axi_master_write_16b_transfer.sv
 ../../src/tb/test/sequences/axi_master_write_32b_transfer.sv
-
+../../src/tb/axi_master_top.sv
 
 
