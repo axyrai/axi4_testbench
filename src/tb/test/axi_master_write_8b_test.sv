@@ -16,7 +16,7 @@ class axi_master_write_8b_test extends axi_base_test;
 //  name - axi_master_write_8b_test
 //  parent - parent under which this component is created
 //--------------------------------------------------------------------------------------------
-function axi_master_write_8b_test::new(string name = "apb_16b_write_test",uvm_component parent = null);
+function new(string name = "apb_16b_write_test",uvm_component parent = null);
   super.new(name, parent);
 endfunction : new
 
@@ -27,7 +27,7 @@ endfunction : new
 // Parameters:
 //  phase - uvm phase
 //--------------------------------------------------------------------------------------------
-task axi_master_write_8b_test::run_phase(uvm_phase phase);
+task run_phase(uvm_phase phase);
   
   super.run_phase(phase);
   axi_master_write_8b_transfer_h = axi_master_write_8b_transfer::type_id::create("axi_master_write_8b_transfer_h");
