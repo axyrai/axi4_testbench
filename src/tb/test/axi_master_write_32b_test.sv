@@ -33,7 +33,7 @@ task run_phase(uvm_phase phase);
   axi_master_write_32b_transfer_h = axi_master_write_32b_transfer::type_id::create("axi_master_write_32b_transfer_h");
   `uvm_info(get_type_name(),$sformatf("axi_master_write_32b_test"),UVM_LOW);
   phase.raise_objection(this);
-    axi_master_write_32b_transfer_h .start(axi_env_h.axi_master_agent_h.axi_master_seqr_h);
+  axi_master_write_32b_transfer_h .start(axi_master_env_h.axi_master_agt_h.axi_master_seqr_h);
   phase.drop_objection(this);
 
 endtask : run_phase
