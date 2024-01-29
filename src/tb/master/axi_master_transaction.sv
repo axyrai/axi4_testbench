@@ -4,7 +4,7 @@
 //--------------------------------------------------------------------------------------------
 //import uvm_pkg::*;
 //`include "uvm_macros.svh"
-//import axi4_globals_pkg::*;
+import axi4_globals_pkg::*;
 //`include "axi_master_pkg.sv"
 //import axi_master_pkg::*;
 class axi_master_transaction extends uvm_sequence_item;
