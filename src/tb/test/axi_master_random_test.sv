@@ -3,7 +3,7 @@ class axi_master_random_test extends axi_base_test;
 
   // instantiation of the handle 
   
-  axi_master_random_seq  axi_master_random_seq_h; 
+  axi_master_random_sequence  axi_master_random_seq_h; 
 
   // Factory registeration
   
