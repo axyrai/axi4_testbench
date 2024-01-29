@@ -1,3 +1,6 @@
+
+`ifndef AXI_MASTER_PKG_INCLUDED_
+`define AXI_MASTER_PKG_INCLUDED_
 package axi_master_pkg;
   `include "uvm_macros.svh"
  // `include "../../globals/axi_globals_pkg.sv"
@@ -13,3 +16,4 @@ package axi_master_pkg;
 
   
 endpackage
+`endif
