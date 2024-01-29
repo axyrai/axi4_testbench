@@ -7,13 +7,13 @@ class axi_master_random_test extends axi_base_test;
 
   // Factory registeration
   
-  function axi_master_random_test::new(string name = "axi_master_random_test",uvm_component parent = null);
+  function new(string name = "axi_master_random_test",uvm_component parent = null);
   super.new(name, parent);
 endfunction : new
 
   // task for run phase
 
- task axi_master_random_test::run_phase(uvm_phase phase);
+ task run_phase(uvm_phase phase);
   
   super.run_phase(phase);
    axi_master_random_seq_h = axi_master_random_seq::type_id::create("axi_master_random_seq_h");
