@@ -1,3 +1,5 @@
+`ifndef AXI_TEST_PKG_INCLUDED_
+`define AXI4_TEST_PKG_INCLUDED_
 package axi_master_pkg;
  `include "uvm_macros.svh"
  import uvm_pkg::*;
@@ -16,3 +18,4 @@ package axi_master_pkg;
  `include "axi_master_write_32b_test.sv"
 
 endpackage
+`endif
