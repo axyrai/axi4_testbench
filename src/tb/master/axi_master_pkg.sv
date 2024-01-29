@@ -4,8 +4,8 @@ package axi_master_pkg;
   import uvm_pkg::*;
   import axi4_globals_pkg::*;
 
-  `include "axi_master_agent.sv"
   `include "axi_master_driver.sv"
+  `include "axi_master_agent.sv"
   `include "axi_master_monitor.sv"
   `include "axi_master_sequencer.sv"
   `include "axi_master_transaction.sv"
