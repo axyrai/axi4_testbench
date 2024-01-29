@@ -1,7 +1,7 @@
 `ifndef AXI_MASTER_ENVIRONMENT_INCLUDED_
 `define AXI_MASTER_ENVIRONMENT_INCLUDED_
 
-import axi_env_pkg::*;
+//import axi_env_pkg::*;
 
 //`include "../master/axi_master_agent.sv"
 //`include "axi_master_scoreboard.sv"
