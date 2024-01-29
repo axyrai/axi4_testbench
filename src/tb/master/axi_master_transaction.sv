@@ -3,7 +3,7 @@
 // This class holds the data items required to drive the stimulus to dut
 //--------------------------------------------------------------------------------------------
 //import uvm_pkg::*;
-//`include "uvm_macros.svh"
+`include "uvm_macros.svh"
 import axi4_globals_pkg::*;
 //`include "axi_master_pkg.sv"
 //import axi_master_pkg::*;
