@@ -92,7 +92,7 @@ compile:
 
 # Setting a default test as base_test
 ifndef test
-override test = axi4_base_test
+override test = axi_base_test
 endif
 
 # Setting the default uvm_verbosity to UVM_MEDIUM
