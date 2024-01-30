@@ -1,0 +1,5 @@
+-html
+axi_master_write_32b/axi_master_write_32b_coverage.ucdb
+-htmldir
+axi_master_write_32b/html_cov_report
+-details
