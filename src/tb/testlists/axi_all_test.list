@@ -1,0 +1,7 @@
+axi_master_random_test
+axi_master_write_8b_test
+axi_master_write_16b_test
+axi_master_write_32b_test
+axi_master_read_8b_test
+axi_master_read_16b_test
+axi_master_read_32b_test
