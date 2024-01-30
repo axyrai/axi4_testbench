@@ -55,13 +55,13 @@ usage:
 	echo "make simulate test=<test_name> uvm_verbosity=<VERBOSITY_LEVEL>";
 	echo "";
 	echo "Example:":
-	echo "make simulate test=base_test uvm_verbosity=UVM_HIGH";
+	echo "make simulate test=axi_master_random_test uvm_verbosity=UVM_HIGH";
 	echo "";
 	echo "To run regression:"
 	echo "make regression testlist_name=<regression_testlist_name.list>";
 	echo "";
 	echo "Example:":
-	echo "make regression testlist_name=axi4_transfers_regression.list";
+	echo "make regression testlist_name=axi_all_test.list";
 	echo "";
 	echo "-----------------------------------------------------------------";
 	echo "-----------------------------------------------------------------";
@@ -128,6 +128,7 @@ simulate:
   -coverage \
 	-c -do "log -r /*; add wave -r /*; coverage save -onexit -assert -directive -cvg -codeAll $(test_folder)/$(test)_coverage.ucdb; run -all; exit" \
 	-wlf $(test_folder)/waveform.wlf
+	wlf2vcd -o $(test_folder)/waveform.vcd $(test_folder)/waveform.wlf 
 
 
 	# For checking and reporting simulation errors
@@ -229,6 +230,8 @@ simulate_war_err:
 	echo "Log file path: $(test_folder)/$(test).log"
 	echo "";
 	echo "Waveform: vsim -view $(test_folder)/waveform.wlf &"
+	echo "";
+	echo "[NEW] Waveform in GTKWAVE: gtkwave $(test_folder)/waveform.vcd &"
 	echo "";
 	echo "Coverage report: firefox $(test_folder)/html_cov_report/index.html &"
 	echo "";
