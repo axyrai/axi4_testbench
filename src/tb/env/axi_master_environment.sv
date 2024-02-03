@@ -13,6 +13,7 @@ class axi_master_environment extends uvm_env;
 
   axi_master_agent axi_master_agt_h;
   axi_master_scoreboard axi_master_scb_h;
+  axi_master_subscriber axi_master_cov_h;
  // axi_master_coverage axi_master_cov_h;
 
   function new(string name = "axi_master_environment", uvm_component parent);
@@ -23,12 +24,12 @@ class axi_master_environment extends uvm_env;
     super.build_phase(phase);
     axi_master_agt_h = axi_master_agent::type_id::create("axi_master_agt", this);
     axi_master_scb_h = axi_master_scoreboard::type_id::create("axi_master_scb", this);
-    //axi_master_cov_h = axi_master_coverage::type_id::create("axi_master_cov", this);
+    axi_master_cov_h = axi_master_coverage::type_id::create("axi_master_cov", this);
   endfunction
 
   virtual function void connect_phase(uvm_phase phase);
     axi_master_agt_h.axi_master_mon_h.item_got_port.connect(axi_master_scb_h.item_got_export);
-    //axi_master_agt_h.axi_master_mon_h.item_got_port.connect(axi_master_cov_h.item_got_export_sub);
+    axi_master_agt_h.axi_master_mon_h.item_got_port.connect(axi_master_cov_h.sub_export);
   endfunction
 
 endclass
