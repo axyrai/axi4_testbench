@@ -15,7 +15,7 @@ class axi_master_subscriber extends uvm_subscriber#(axi_master_transaction);
 endclass
 
 function axi_master_subscriber::new(string name="axi_master_subscriber", uvm_component parent);
-  super.new(name, parent)
+  super.new(name, parent);
   sub_export= new("sub_export",this);
   packet = axi_master_transaction::type_id::create("packet");
   cg=new();
