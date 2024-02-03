@@ -10,7 +10,7 @@ class axi_master_subscriber extends uvm_subscriber#(axi_master_transaction);
   endgroup
 
   extern function new(string name="axi_master_subscriber",uvm_component parent);
-  extern function void write(axi_master_transaction tx);
+  extern function void write(axi_master_transaction t);
 
 endclass
 
