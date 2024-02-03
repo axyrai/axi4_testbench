@@ -24,7 +24,7 @@ class axi_master_environment extends uvm_env;
     super.build_phase(phase);
     axi_master_agt_h = axi_master_agent::type_id::create("axi_master_agt", this);
     axi_master_scb_h = axi_master_scoreboard::type_id::create("axi_master_scb", this);
-    axi_master_cov_h = axi_master_coverage::type_id::create("axi_master_cov", this);
+    axi_master_cov_h = axi_master_subscriber::type_id::create("axi_master_cov", this);
   endfunction
 
   virtual function void connect_phase(uvm_phase phase);
