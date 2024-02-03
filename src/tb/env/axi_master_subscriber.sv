@@ -21,8 +21,8 @@ function axi_master_subscriber::new(string name="axi_master_subscriber", uvm_com
   cg=new();
 endfunction : new
 
-function void axi_master_subscriber::write(axi_master_transaction tx);
-  packet = tx;
+function void axi_master_subscriber::write(axi_master_transaction t);
+  packet = t;
   cg.sample();
   $display("Coverage = %0d ", cg.get_coverage());
 endfunction
