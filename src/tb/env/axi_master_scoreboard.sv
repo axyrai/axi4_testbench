@@ -82,7 +82,7 @@ else if(req.s_axi_awburst == 1) begin
 end
 end
 //READ
-  if(req.s_axi_arvalid && req.s_axi_arready && req.s_axi_rvalid  && req.s_axi_rready ) begin
+  if(req.s_axi_rvalid  && req.s_axi_rready ) begin
 if(req.s_axi_arburst == 0) begin
   if(req.s_axi_rresp == OKAY) begin
     read_success[req.s_axi_araddr] =req.s_axi_rdata[req.s_axi_arlen];

@@ -72,7 +72,7 @@ endtask
  
  //axi MASTER DRIVER WRITE TASK 
 task axi_master_driver::axi_write_task();
-  fork
+//  fork
     //WRITE ADDRESS CHANNEL LOGIC
 	begin: WRITE_ADDRESS_CHANNEL
       if(req.s_axi_awvalid)
@@ -81,6 +81,7 @@ task axi_master_driver::axi_write_task();
          // if(vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_awready)
             begin
                write_addr_data.get(1);
+              vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arvalid <= req.s_axi_arvalid;
                vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_awaddr <= req.s_axi_awaddr;
                vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_awlen <= req.s_axi_awlen;
                vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_awid <= req.s_axi_awid;
@@ -132,7 +133,7 @@ task axi_master_driver::axi_write_task();
           end
         end
 	end: WRITE_RESPONSE_CHANNEL
-join
+//join
  
 endtask: axi_write_task
  
@@ -149,6 +150,8 @@ fork
           begin
            // if(vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arready)
               begin
+              vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_awvalid <= req.s_axi_awvalid;
+              vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_wvalid <= req.s_axi_wvalid;
               vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arid <= req.s_axi_arid;
               vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_araddr <= req.s_axi_araddr;
               vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arlen <= req.s_axi_arlen;
@@ -171,9 +174,19 @@ fork
             begin
               vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_rready <= 1'b1;
             end
+//  begin: READ_COMPLETION
+  //                  int len1 = int'(req.s_axi_arlen);
+  //                  for(int j=0;j<=len1+1;j++)
+  //                    begin
+  //                    @(posedge vif.axi_master_dr_mp.clk);
+  //                  end
+    //                vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arvalid <= 1'b0;
+  // end: READ_COMPLETION
+
         end
     end: READ_DATA_CHANNEL
- 
+
+                    
 join
 end 
 endtask : axi_read_task
