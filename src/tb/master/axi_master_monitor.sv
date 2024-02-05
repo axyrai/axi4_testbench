@@ -69,7 +69,7 @@ task axi_master_monitor::run_phase(uvm_phase phase);
             begin : WRITE_ADDRESS
               //Taking data of write address channel
               do begin
-              `uvm_info("VALID READY", $sformatf("awvalid = %0d, awready = %0d",vif.axi_master_mo_mp.axi_master_mo_cb.s_axi_awvalid, vif.axi_master_mo_mp.axi_master_mo_cb.s_axi_awready),UVM_NONE);
+             // `uvm_info("VALID READY", $sformatf("awvalid = %0d, awready = %0d",vif.axi_master_mo_mp.axi_master_mo_cb.s_axi_awvalid, vif.axi_master_mo_mp.axi_master_mo_cb.s_axi_awready),UVM_NONE);
 
                 @(posedge vif.axi_master_mo_mp.clk);
               end

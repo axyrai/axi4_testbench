@@ -1,0 +1,5 @@
+var g_db_data = [
+{dummy:0},
+{name:'cg',f:1,type:6,id:1914,tb:'64',h:'2',m:'62',hp:'3.12%',cov:['3.12%','R'],g:'100.00%',gp:['3.12%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi_env_pkg/axi_master_subscriber',parent:'1909'},
+{name:'cg',f:1,type:6,id:2470,tb:'64',h:'2',m:'62',hp:'3.12%',cov:['3.12%','R'],g:'100.00%',gp:['3.12%','R'],opts:[[],['merge_instance','true']],hdlPath:'work.axi_env_pkg::axi_master_subscriber',parent:'2465'}];
+processConsCovergroupsData(g_db_data);
