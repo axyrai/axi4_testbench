@@ -12,4 +12,5 @@ package axi_sequence_pkg;
   `include "axi_master_write_8b_transfer.sv"
   `include "axi_master_write_16b_transfer.sv"
   `include "axi_master_write_32b_transfer.sv"
+  `include "axi_master_write_read_32b_transfer.sv"
 endpackage  

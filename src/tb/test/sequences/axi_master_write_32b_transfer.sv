@@ -29,15 +29,30 @@ endfunction : new
 task axi_master_write_32b_transfer::body();
   super.body();
   req = axi_master_transaction::type_id::create("req"); 
+  //start_item(req);
+  //if(!req.randomize() with {req.s_axi_awsize == WRITE_4_BYTES;
+  //                          req.s_axi_arvalid == 0;
+  //                          req.s_axi_awvalid == 1;
+  //                          req.s_axi_awburst == WRITE_INCR;}) begin
+
+  //  `uvm_fatal("axi4","Rand failed");
+//  end
+  //req.print();
+  //finish_item(req);
+
   start_item(req);
+  $display("write tr");
   if(!req.randomize() with {req.s_axi_awsize == WRITE_4_BYTES;
                             req.s_axi_arvalid == 0;
+                            req.s_axi_awlen == 9;
                             req.s_axi_awvalid == 1;
+                            req.s_axi_wvalid ==  1;
                             req.s_axi_awburst == WRITE_INCR;}) begin
 
     `uvm_fatal("axi4","Rand failed");
   end
   req.print();
   finish_item(req);
+
 
 endtask : body

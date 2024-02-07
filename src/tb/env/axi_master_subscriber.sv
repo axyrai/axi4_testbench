@@ -24,5 +24,5 @@ endfunction : new
 function void axi_master_subscriber::write(axi_master_transaction t);
   packet = t;
   cg.sample();
-  $display("Coverage = %0d ", cg.get_coverage());
+//  $display("Coverage = %0d ", cg.get_coverage());
 endfunction

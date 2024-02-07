@@ -141,6 +141,9 @@ endtask: axi_write_task
  
 task axi_master_driver::axi_read_task();
 begin
+  int len1 = int'(req.s_axi_arlen);
+  int j;
+  
 fork
   // READ ADDRESS CHANNEL LOGIC
 	begin: READ_ADDRESS_CHANNEL
@@ -174,14 +177,14 @@ fork
             begin
               vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_rready <= 1'b1;
             end
-//  begin: READ_COMPLETION
-  //                  int len1 = int'(req.s_axi_arlen);
-  //                  for(int j=0;j<=len1+1;j++)
-  //                    begin
-  //                    @(posedge vif.axi_master_dr_mp.clk);
-  //                  end
-    //                vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arvalid <= 1'b0;
-  // end: READ_COMPLETION
+ // begin: READ_COMPLETION
+            //        int len1 = int'(req.s_axi_arlen);
+   //                 for(j=0;j<=len1+1;j++)
+     //                 begin
+       //               @(posedge vif.axi_master_dr_mp.clk);
+         //           end
+           //         vif.axi_master_dr_mp.axi_master_dr_cb.s_axi_arvalid <= 1'b0;
+ //  end: READ_COMPLETION
 
         end
     end: READ_DATA_CHANNEL

@@ -9,17 +9,17 @@ z2
 cModel Technology
 Z0 d/hwetools/work_area/frontend/rakshitharavindra/axi_final/axi4_testbench/sim/questa_sim
 T_opt
-!s110 1707114922
-VX2GLoXKRIHA:BhOz6C`jf3
+!s110 1707283869
+VG6R=P>X>YMMbbdjl3`:Z21
 04 14 4 work axi_master_top fast 0
-=1-a4badb503ddd-65c081aa-e256-1c25
+=1-a4badb503ddd-65c3159c-bccf5-3846
 o-quiet -auto_acc_if_foreign -work work +acc=npr
 Z1 tCvgOpt 0
 n@_opt
 OE;O;10.6c;65
 Xaxi4_globals_pkg
 Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z3 !s110 1707114913
+Z3 !s110 1707283861
 !i10b 1
 !s100 C4gzd>Rk72b1Xm3m;32]10
 I@3cZcl9YmH;ZlK4KZm`g61
@@ -34,8 +34,8 @@ Z5 OE;L;10.6c;65
 r1
 !s85 0
 31
-Z6 !s108 1707114913.000000
-Z7 !s107 ../../src/tb/test//axi_master_write_32b_test.sv|../../src/tb/test//axi_master_write_8b_test.sv|../../src/tb/test//axi_master_write_16b_test.sv|../../src/tb/test//axi_master_read_8b_test.sv|../../src/tb/test//axi_master_read_32b_test.sv|../../src/tb/test//axi_master_read_16b_test.sv|../../src/tb/test//axi_master_random_test.sv|../../src/tb/test//axi_base_test.sv|../../src/tb/env//axi_master_environment.sv|../../src/tb/env//axi_master_subscriber.sv|../../src/tb/env//axi_master_scoreboard.sv|../../src/tb/test/sequences//axi_master_write_32b_transfer.sv|../../src/tb/test/sequences//axi_master_write_16b_transfer.sv|../../src/tb/test/sequences//axi_master_write_8b_transfer.sv|../../src/tb/test/sequences//axi_master_read_32b_transfer.sv|../../src/tb/test/sequences//axi_master_read_16b_transfer.sv|../../src/tb/test/sequences//axi_master_read_8b_transfer.sv|../../src/tb/test/sequences//axi_master_random_sequence.sv|../../src/tb/test/sequences//axi_master_base_sequence.sv|../../src/tb/master//axi_master_agent.sv|../../src/tb/master//axi_master_sequencer.sv|../../src/tb/master//axi_master_monitor.sv|../../src/tb/master//axi_master_driver.sv|../../src/tb/master//axi_master_transaction.sv|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../../src/tb/axi_master_top.sv|../../src/tb/axi_if/axi_master_interface.sv|../../src/tb/test/axi_test_pkg.sv|../../src/tb/env/axi_env_pkg.sv|../../src/tb/test/sequences/axi_sequence_pkg.sv|../../src/tb/master/axi_master_pkg.sv|../../src/globals/axi4_globals_pkg.sv|../../src/dut/axi_ram.v|
+Z6 !s108 1707283861.000000
+Z7 !s107 ../../src/tb/test//axi_master_write_read_32b_test.sv|../../src/tb/test//axi_master_write_32b_test.sv|../../src/tb/test//axi_master_write_8b_test.sv|../../src/tb/test//axi_master_write_16b_test.sv|../../src/tb/test//axi_master_read_8b_test.sv|../../src/tb/test//axi_master_read_32b_test.sv|../../src/tb/test//axi_master_read_16b_test.sv|../../src/tb/test//axi_master_random_test.sv|../../src/tb/test//axi_base_test.sv|../../src/tb/env//axi_master_environment.sv|../../src/tb/env//axi_master_subscriber.sv|../../src/tb/env//axi_master_scoreboard.sv|../../src/tb/test/sequences//axi_master_write_read_32b_transfer.sv|../../src/tb/test/sequences//axi_master_write_32b_transfer.sv|../../src/tb/test/sequences//axi_master_write_16b_transfer.sv|../../src/tb/test/sequences//axi_master_write_8b_transfer.sv|../../src/tb/test/sequences//axi_master_read_32b_transfer.sv|../../src/tb/test/sequences//axi_master_read_16b_transfer.sv|../../src/tb/test/sequences//axi_master_read_8b_transfer.sv|../../src/tb/test/sequences//axi_master_random_sequence.sv|../../src/tb/test/sequences//axi_master_base_sequence.sv|../../src/tb/master//axi_master_agent.sv|../../src/tb/master//axi_master_sequencer.sv|../../src/tb/master//axi_master_monitor.sv|../../src/tb/master//axi_master_driver.sv|../../src/tb/master//axi_master_transaction.sv|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../../src/tb/axi_master_top.sv|../../src/tb/axi_if/axi_master_interface.sv|../../src/tb/test/axi_test_pkg.sv|../../src/tb/env/axi_env_pkg.sv|../../src/tb/test/sequences/axi_sequence_pkg.sv|../../src/tb/master/axi_master_pkg.sv|../../src/globals/axi4_globals_pkg.sv|../../src/dut/axi_ram.v|
 Z8 !s90 -sv|+acc|+cover|+fcover|-l|axi4_compile.log|-f|../axi_compile.f|
 !i113 0
 Z9 !s102 +cover
@@ -46,29 +46,29 @@ Xaxi_env_pkg
 R2
 Z12 DXx6 mtiUvm 7 uvm_pkg 0 22 oMKUklN?>LE6@MJe7=2><1
 Z13 DXx4 work 16 axi4_globals_pkg 0 22 @3cZcl9YmH;ZlK4KZm`g61
-Z14 DXx4 work 14 axi_master_pkg 0 22 zU52U=HNJEcFH5MZAU82;0
-Z15 !s110 1707114914
+Z14 DXx4 work 14 axi_master_pkg 0 22 [N?D^_NTmCoaNo1zEd@RH0
+R3
 !i10b 1
-!s100 ;G[F`;A[aWJ`HUkjdYWa`0
-I[RB<TH2@SC25AGI=;G6OX0
-V[RB<TH2@SC25AGI=;G6OX0
+!s100 g_X:m4@E;oBd_:WaO=V6G0
+Io4cjNLWzTCkN>TJ<JK4ho1
+Vo4cjNLWzTCkN>TJ<JK4ho1
 S1
 R0
-w1707110873
+w1707283846
 8../../src/tb/env/axi_env_pkg.sv
 F../../src/tb/env/axi_env_pkg.sv
-Z16 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
-Z17 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
-Z18 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
-Z19 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
-Z20 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
-Z21 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
-Z22 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
-Z23 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
-Z24 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
-Z25 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
-Z26 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
-Z27 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Z15 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z16 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z17 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z18 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z19 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z20 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z21 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z22 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z23 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z24 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z25 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z26 F/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
 F../../src/tb/env//axi_master_scoreboard.sv
 F../../src/tb/env//axi_master_subscriber.sv
 F../../src/tb/env//axi_master_environment.sv
@@ -87,7 +87,7 @@ R11
 R1
 Yaxi_master_interface
 R2
-R15
+Z27 !s110 1707283862
 !i10b 1
 !s100 0TMJ][:fzd;hF]:?iCf3=0
 IkHA<?RdGOU]VP]NM989902
@@ -116,16 +116,17 @@ Xaxi_master_pkg
 R2
 R12
 R13
-R15
+R3
 !i10b 1
-!s100 7m^kIaUWY35BjKF57EB?H0
-IzU52U=HNJEcFH5MZAU82;0
-VzU52U=HNJEcFH5MZAU82;0
+!s100 >JFAJK]2kM@H9UVjd_^W;0
+I[N?D^_NTmCoaNo1zEd@RH0
+V[N?D^_NTmCoaNo1zEd@RH0
 S1
 R0
-w1707114892
+w1707283584
 8../../src/tb/master/axi_master_pkg.sv
 F../../src/tb/master/axi_master_pkg.sv
+R15
 R16
 R17
 R18
@@ -137,7 +138,6 @@ R23
 R24
 R25
 R26
-R27
 F../../src/tb/master//axi_master_transaction.sv
 F../../src/tb/master//axi_master_driver.sv
 F../../src/tb/master//axi_master_monitor.sv
@@ -161,10 +161,10 @@ R2
 R12
 R13
 R14
-Z29 DXx4 work 11 axi_env_pkg 0 22 [RB<TH2@SC25AGI=;G6OX0
-Z30 DXx4 work 16 axi_sequence_pkg 0 22 SZ?;f:0@V`BC[LDod=gDJ2
-Z31 DXx4 work 12 axi_test_pkg 0 22 V5bMai0UVHOZ?0C52KG3M1
-DXx4 work 22 axi_master_top_sv_unit 0 22 =kKS51zAVZ3Zcd`G2XPkc3
+Z29 DXx4 work 11 axi_env_pkg 0 22 o4cjNLWzTCkN>TJ<JK4ho1
+Z30 DXx4 work 16 axi_sequence_pkg 0 22 92>cVmE`2dzg1^gghkzbL0
+Z31 DXx4 work 12 axi_test_pkg 0 22 482<dZk8@_C=lDI6AKko`0
+DXx4 work 22 axi_master_top_sv_unit 0 22 mHiB;MZ2@6S3D]dm8F0o60
 R28
 r1
 !s85 0
@@ -196,19 +196,20 @@ R14
 R29
 R30
 R31
-V=kKS51zAVZ3Zcd`G2XPkc3
+VmHiB;MZ2@6S3D]dm8F0o60
 r1
 !s85 0
 31
 !i10b 1
 !s100 ejPQSFk87EA<IkmWaE35m2
-I=kKS51zAVZ3Zcd`G2XPkc3
+ImHiB;MZ2@6S3D]dm8F0o60
 !i103 1
 S1
 R0
 R4
 R32
 R33
+R15
 R16
 R17
 R18
@@ -220,7 +221,6 @@ R23
 R24
 R25
 R26
-R27
 L0 2
 R5
 R6
@@ -262,16 +262,17 @@ R2
 R12
 R13
 R14
-R15
+R3
 !i10b 1
-!s100 0c<V;83M[7P3]GbL@_JU^3
-ISZ?;f:0@V`BC[LDod=gDJ2
-VSZ?;f:0@V`BC[LDod=gDJ2
+!s100 LGb?Gf2K4gE49BkUG8WWl3
+I92>cVmE`2dzg1^gghkzbL0
+V92>cVmE`2dzg1^gghkzbL0
 S1
 R0
-w1707109954
+w1707283412
 8../../src/tb/test/sequences/axi_sequence_pkg.sv
 F../../src/tb/test/sequences/axi_sequence_pkg.sv
+R15
 R16
 R17
 R18
@@ -283,7 +284,6 @@ R23
 R24
 R25
 R26
-R27
 F../../src/tb/test/sequences//axi_master_base_sequence.sv
 F../../src/tb/test/sequences//axi_master_random_sequence.sv
 F../../src/tb/test/sequences//axi_master_read_8b_transfer.sv
@@ -292,6 +292,7 @@ F../../src/tb/test/sequences//axi_master_read_32b_transfer.sv
 F../../src/tb/test/sequences//axi_master_write_8b_transfer.sv
 F../../src/tb/test/sequences//axi_master_write_16b_transfer.sv
 F../../src/tb/test/sequences//axi_master_write_32b_transfer.sv
+F../../src/tb/test/sequences//axi_master_write_read_32b_transfer.sv
 L0 1
 R5
 r1
@@ -312,16 +313,17 @@ R13
 R14
 R29
 R30
-R15
+R27
 !i10b 1
-!s100 b_ie;]YDPn?iVlRSoK6kT3
-IV5bMai0UVHOZ?0C52KG3M1
-VV5bMai0UVHOZ?0C52KG3M1
+!s100 V=z5dzPIl;BQ88V0W9nR]1
+I482<dZk8@_C=lDI6AKko`0
+V482<dZk8@_C=lDI6AKko`0
 S1
 R0
-w1707110709
+w1707279433
 8../../src/tb/test/axi_test_pkg.sv
 F../../src/tb/test/axi_test_pkg.sv
+R15
 R16
 R17
 R18
@@ -333,7 +335,6 @@ R23
 R24
 R25
 R26
-R27
 F../../src/tb/test//axi_base_test.sv
 F../../src/tb/test//axi_master_random_test.sv
 F../../src/tb/test//axi_master_read_16b_test.sv
@@ -342,6 +343,7 @@ F../../src/tb/test//axi_master_read_8b_test.sv
 F../../src/tb/test//axi_master_write_16b_test.sv
 F../../src/tb/test//axi_master_write_8b_test.sv
 F../../src/tb/test//axi_master_write_32b_test.sv
+F../../src/tb/test//axi_master_write_read_32b_test.sv
 L0 3
 R5
 r1
