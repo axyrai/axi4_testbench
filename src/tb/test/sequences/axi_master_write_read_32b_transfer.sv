@@ -1,50 +1,41 @@
 //--------------------------------------------------------------------------------------------
-// Class: axi_master_write_32b_transfer
+// Class: axi_master_write_16b_transfer
 // Extends the axi_master_base_sequence and randomises the req item
 //--------------------------------------------------------------------------------------------
-class axi_master_write_32b_transfer extends axi_master_base_sequence;
-  `uvm_object_utils(axi_master_write_32b_transfer)
+class axi_master_write_read_32b_transfer extends axi_master_base_sequence;
+  `uvm_object_utils(axi_master_write_read_32b_transfer)
 
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
-  extern function new(string name = "axi_master_write_32b_transfer");
+  extern function new(string name = "axi_master_write_read_32b_transfer");
   extern task body();
-endclass : axi_master_write_32b_transfer
+endclass : axi_master_write_read_32b_transfer
 
 //--------------------------------------------------------------------------------------------
 // Construct: new
 // Initializes new memory for the object
 //
 // Parameters:
-//  name - axi_master_write_32b_transfer
+//  name - axi_master_write_16b_transfer
 //--------------------------------------------------------------------------------------------
-function axi_master_write_32b_transfer::new(string name = "axi_master_write_32b_transfer");
+function axi_master_write_read_32b_transfer::new(string name = "axi_master_write_read_32b_transfer");
   super.new(name);
 endfunction : new
 //--------------------------------------------------------------------------------------------
 // Task: body
 // Creates the req of type master transaction and randomises the req
 //--------------------------------------------------------------------------------------------
-task axi_master_write_32b_transfer::body();
+task axi_master_write_read_32b_transfer::body();
+  int temp_addr;
   super.body();
+//  repeat(10) begin
   req = axi_master_transaction::type_id::create("req"); 
-  //start_item(req);
-  //if(!req.randomize() with {req.s_axi_awsize == WRITE_4_BYTES;
-  //                          req.s_axi_arvalid == 0;
-  //                          req.s_axi_awvalid == 1;
-  //                          req.s_axi_awburst == WRITE_INCR;}) begin
-
-  //  `uvm_fatal("axi4","Rand failed");
-//  end
-  //req.print();
-  //finish_item(req);
-
   start_item(req);
   $display("write tr");
   if(!req.randomize() with {req.s_axi_awsize == WRITE_4_BYTES;
                             req.s_axi_arvalid == 0;
-                            req.s_axi_awlen == 9;
+                            req.s_axi_awlen == 4;
                             req.s_axi_awvalid == 1;
                             req.s_axi_wvalid ==  1;
                             req.s_axi_awburst == WRITE_INCR;}) begin
@@ -53,6 +44,22 @@ task axi_master_write_32b_transfer::body();
   end
   req.print();
   finish_item(req);
+  temp_addr = req.s_axi_awaddr;
+  req = axi_master_transaction::type_id::create("req"); 
+  start_item(req);
+  $display("read tr");
+if(!req.randomize() with {req.s_axi_arsize == READ_4_BYTES;
+                            req.s_axi_araddr == temp_addr;
+                            req.s_axi_arlen == 4;
+                            req.s_axi_arvalid == 1;
+                            req.s_axi_awvalid == 0;
+                            req.s_axi_wvalid ==  0;
+                            req.s_axi_arburst == READ_INCR;}) begin
 
+    `uvm_fatal("axi","Rand failed");
+  end
+  req.print();
+  finish_item(req);
+//end
 
 endtask : body

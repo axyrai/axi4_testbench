@@ -16,6 +16,7 @@ package axi_test_pkg;
  `include "axi_master_write_16b_test.sv"
  `include "axi_master_write_8b_test.sv"
  `include "axi_master_write_32b_test.sv"
+ `include "axi_master_write_read_32b_test.sv"
 
 endpackage
 `endif

@@ -132,11 +132,11 @@ endfunction
             `uvm_info("FAIL", $sformatf("write_success[%0h]: %0d read_success[%0h]: %0d success_count: %0d failure_count: %0d",i,write_success[i],i,read_success[i], success_count, failure_count), UVM_LOW);
         end
           read_success.delete(i);
-        `uvm_info("Deleted Address",$sformatf("read_success[%0h]: %0d",i,read_success[i]),UVM_LOW);
+        `uvm_info("Deleted Address",$sformatf("%0h",i),UVM_LOW);
      end
    end
-    `uvm_info("WRITE_SUCCESS",$sformatf("write_success:%0p",write_success),UVM_LOW);
-     `uvm_info("READ_SUCCESS",$sformatf("read_success:%0p",read_success),UVM_LOW);
+    //`uvm_info("WRITE_SUCCESS",$sformatf("write_success:%0p",write_success),UVM_LOW);
+    // `uvm_info("READ_SUCCESS",$sformatf("read_success:%0p",read_success),UVM_LOW);
  endfunction
 
 function void check_2();
@@ -151,11 +151,11 @@ function void check_2();
           `uvm_info("SLAVE_ERROR FAIL", $sformatf("write_success[%0h]: %0d read_fail[%0h]: %0d success_count: %0d failure_count: %0d",i,write_success[i],i,read_fail[i], success_count, failure_count), UVM_LOW);
         end
           read_fail.delete(i);
-             `uvm_info("Deleted Address",$sformatf("read_fail[%0h]: %0d",i,read_fail[i]),UVM_LOW);
+             `uvm_info("Deleted Address",$sformatf("%0h",i),UVM_LOW);
              
   end
-     `uvm_info("WRITE_SUCCESS",$sformatf("write_success:%0p",write_success),UVM_LOW);
-           `uvm_info("READ_FAIL",$sformatf("read_fail:%0p",read_fail),UVM_LOW);
+    // `uvm_info("WRITE_SUCCESS",$sformatf("write_success:%0p",write_success),UVM_LOW);
+      //     `uvm_info("READ_FAIL",$sformatf("read_fail:%0p",read_fail),UVM_LOW);
   end    
 endfunction
 
@@ -171,11 +171,11 @@ endfunction
           `uvm_info("SLAVE_ERROR FAIL", $sformatf("write_fail[%0h]: %0d read_success[%0h]: %0d success_count: %0d failure_count: %0d",i,write_fail[i],i,read_success[i], success_count, failure_count), UVM_LOW);
         end
           read_success.delete(i);
-             `uvm_info("Deleted Address",$sformatf("read_success[%0h]: %0d",i,read_success[i]),UVM_LOW);
+             `uvm_info("Deleted Address",$sformatf("%0h",i),UVM_LOW);
              
   end
-      `uvm_info("WRITE_FAIL",$sformatf("write_fail:%0p",write_fail),UVM_LOW);
-      `uvm_info("READ_SUCCESS",$sformatf("read_success:%0p",read_success),UVM_LOW);
+//      `uvm_info("WRITE_FAIL",$sformatf("write_fail:%0p",write_fail),UVM_LOW);
+  //    `uvm_info("READ_SUCCESS",$sformatf("read_success:%0p",read_success),UVM_LOW);
   end    
 endfunction
   endclass : axi_master_scoreboard

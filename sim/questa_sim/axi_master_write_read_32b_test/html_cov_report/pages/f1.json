@@ -1,0 +1,34 @@
+var g_data = {
+f11:{
+scopes:[{link:'z.htm?f=0&s=11',val:'work.axi_ram'}]
+,FSMs:[{dummy:0}
+,{anchor:'cvg271',items:[{c:'Y',p:'58.33',z:'write_state_reg'}
+,{cr:'c',s:'1',z:'WRITE_STATE_IDLE',h:'6',c:'g'}
+,{cr:'c',z:'WRITE_STATE_IDLE -> WRITE_STATE_BURST',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'WRITE_STATE_BURST',h:'5',c:'g'}
+,{cr:'m',z:'WRITE_STATE_BURST -> WRITE_STATE_RESP',h:'0',c:'r'}
+,{cr:'c',z:'WRITE_STATE_BURST -> WRITE_STATE_IDLE',h:'1',c:'g'}
+,{cr:'m',s:'1',z:'WRITE_STATE_RESP',h:'0',c:'r'}
+,{cr:'m',z:'WRITE_STATE_RESP -> WRITE_STATE_IDLE',h:'0',c:'r'}
+]}
+
+],
+},
+f231:{
+scopes:[{s:'13',b:'1',val:'axi_master_top'},{link:'z.htm?f=0&s=231',val:'dut'}]
+,FSMs:[{dummy:0}
+,{anchor:'cvg271',items:[{c:'Y',p:'58.33',z:'write_state_reg'}
+,{cr:'c',s:'1',z:'WRITE_STATE_IDLE',h:'6',c:'g'}
+,{cr:'c',z:'WRITE_STATE_IDLE -> WRITE_STATE_BURST',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'WRITE_STATE_BURST',h:'5',c:'g'}
+,{cr:'m',z:'WRITE_STATE_BURST -> WRITE_STATE_RESP',h:'0',c:'r'}
+,{cr:'c',z:'WRITE_STATE_BURST -> WRITE_STATE_IDLE',h:'1',c:'g'}
+,{cr:'m',s:'1',z:'WRITE_STATE_RESP',h:'0',c:'r'}
+,{cr:'m',z:'WRITE_STATE_RESP -> WRITE_STATE_IDLE',h:'0',c:'r'}
+]}
+
+],
+},
+dummyEnd:0
+};
+processFsmData(g_data);
